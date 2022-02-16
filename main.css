@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    line-height: 1.65;
+}
+ol, ul {
+    list-style: none;
+}
+
+::selection {
+    background-color: rgba(105 176 172 / 20%);
+}
+
+/* ------- */
+
+html, body, select, textarea, input {
+    font-family: "Cochin", "Georgia", "Times New Roman", "Liberation Serif", "Noto Serif", "Noto Serif CJK SC", "SourceHanSerifCN", serif;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+/* -------- */
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+    h1 {
+        font-size: 2.4rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+
+p:not(:last-child) {
+    margin-bottom: 1rem;;
+}
+
+i, em {
+    font-style: normal;
+    color: #69b0ac;
+}
+
+a {
+    transition: color 0.3s;
+    color: #66bab7;
+    text-decoration: none;
+    cursor: pointer;
+}
+    a:hover {
+        transition: color 0.3s;
+        color: #ffffff;
+        border-bottom: 1px solid #ffffff;
+    }
+
+details {
+    display: block;
+    appearance: none;
+    margin: 0.4rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 8px;
+    background-color: rgba(105 176 172 / 20%);
+}
+    details summary {
+        font-weight: 600;
+        list-style: none;
+        cursor: pointer;
+    }
+        details summary::before {
+            content: "";
+            display: inline-block;
+            vertical-align: 10%;
+            margin-right: 1rem;
+            width: 8px;
+            height: 8px;
+            transform: rotate(315deg);
+            border-width: 0 2px 2px 0;
+            border-color: #ffffff;
+            border-style: solid;
+        }
+            details[open] summary::before {
+                transform: rotate(45deg);
+            }
+
+/* --------- */
+
+header, footer {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+header {
+        min-height: 100vh;
+        color: #ffffff;
+        background-color: #0b346e;
+        text-align: center;
+        padding: 6rem 3rem;
+    }
+    footer {
+        min-height: calc(100vh - 5rem);
+        color: #ffffff;
+        background-color: #005caf;
+        padding: 3rem;
+    }
+
+p#copy {
+    height: 5rem;
+    box-sizing: border-box;
+    background-color: #005caf;
+    color: #ffffff;
+    padding: 3rem;
+}
