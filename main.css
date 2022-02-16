@@ -88,6 +88,9 @@ details {
             border-color: #ffffff;
             border-style: solid;
         }
+        details summary::-webkit-details-marker{
+            display:none; 
+            }
             details[open] summary::before {
                 transform: rotate(45deg);
             }
