@@ -1,43 +1,107 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kamacite China</title>
-	<link rel="stylesheet" href="assets/main.css"/>
+
+	<link rel="stylesheet" href="assets/custom.css">
 </head>
+
 <body>
-	<header id="header">
-		<div id="headerContent">
-			<h1 float>&nbsp;Kamacite.</h1>
-			<p float>Devoted to code.</p>
-			<a href="#main" button float>了解更多</a>
-		</div>
-	</header>
-	<div id="main">
-		<a name="main"></a>
-		<h1 serif>&emsp;很有精神。</h1>
-		<span half right>
-			<h2 serif>Projects 项目</h2>
-			<h3>KamaciteOS</h3>
-			<p>
-				轻量级的基于 Linux 的操作系统，安全、透明，对所有用户友好。
-			</p>
-			<h3>KamaSecurity</h3>
-			<p>
-				简易小巧查毒软件，即开即用。
-			</p>
-		</span>
-		<span half left>
-			<h2 sans>Contact 联系</h2>
-			<p>GitHub <a href="https://github.com/Kamacite-CN">@Kamacite-CN</a></p>
-			<p>Email <a href="mailto:swang_0711@kamacite.cn">swang_0711@kamacite.cn</a></p>
-			<h2 sans>Friend links 友情链接</h2>
-			<p><a href="https://qizhen-yang.cn">Qizhen Yang</a></p>
-			<p><a href="https://wflms.cn">WFLA</a></p>
-		</span>
-		<p id="copy" serif>&copy; 2019~2022 Kamacite China. All rights reserved.</p>
+	<div class="jumbotron jumbotron-fluid text-center" style="margin-bottom: 0;">
+		<h1 class="display-1">Kamacite.</h1>
+		<h3>Devoted to code.</h3>
 	</div>
+	<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+		<div class="container-fluid">
+		<button class="navbar-toggler btn btn-primary" type="button" data-toggle="collapse" data-target="#nav-content">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="#">Kamacite China</a>
+		<div class="collapse navbar-collapse" id="nav-content">
+			<ul class="nav navbar-nav">
+				<li class="active"><a class="nav-link" href="#">首页</a></li>
+				<li><a class="nav-link" href="#projects">项目</a></li>
+				<li><a class="nav-link" href="#about">关于 Kamacite</a></li>
+				<li><a class="nav-link" href="#contacts">联系我们</a></li>
+				<li><a class="nav-link" href="#sponsor">赞助</a></li>
+				<li><a class="nav-link" href="#links">友情链接</a></li>
+			</ul>
+		</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<a id="projects"></a>
+			<div class="col-sm-12 col-lg-8 my-5">
+				<h1>项目
+					<small>已发布或正在开发的产品</small>
+				</h1>
+				<div class="card card-body my-2">
+					<h2>KamaciteOS <span class="badge badge-light">开发中</span></h2>
+					<p>基于 Linux 的轻量级操作系统，安全、透明，对所有用户友好。</p>
+					<a class="btn btn-info disabled">获取 KamaciteOS
+						<span class="badge badge-danger">不可用</span>
+					</a>
+				</div>
+				<div class="card card-body my-2">
+					<h2>Kamacite Security</h2>
+					<p>简洁小巧恶意程序查杀软件，即开即用。</p>
+					<a class="btn btn-info disabled">获取 Kamacite Security
+						<span class="badge badge-warning">待上传</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-sm-12 col-lg-4 my-5">
+				<a id="about"></a>
+				<div class="card card-body">
+					<h1 class="card-title">关于 Kamacite</h1>
+					<p class="card-text">我们是两个上海中学生。</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12 col-lg-8 my-5">
+				<a id="contacts"></a>
+				<div class="mb-5">
+					<h1>联系我们</h1>
+					<div class="list-group">
+						<a href="https://github.com/Kamacite-CN" class="list-group-item">GitHub @Kamacite-CN</a>
+						<a href="mailto:swang_0711@kamacite.cn" class="list-group-item">swang_0711@kamacite.cn</a>
+					</div>
+				</div>
+				<a id="sponsor"></a>
+				<div class="mt-5">
+					<h2>赞助</h2>
+					<small>不会真的有人给我们赞助吧</small>
+				</div>
+			</div>
+			<a id="links"></a>
+			<div class="col-sm-12 col-lg-4 my-5">
+				<h2>友情链接</h2>
+				<div class="list-group">
+					<a class="list-group-item" href="https://qizhen-yang.cn">Qizhen Yang</a>
+					<a class="list-group-item" href="https://newtab.qizhen-yang.cn">NewTAB 2.0</a>
+					<a class="list-group-item" href="http://wflms.cn">WFLA</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="jumbotron jumbotron-fluid text-center" style="margin-bottom: 0;">
+		<small>Made with &hearts; by <a href="#">Kamacite Group</a>.
+			&copy; 2019~2022 Kamacite China.
+		</small>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/twbs/bootstrap@4/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
