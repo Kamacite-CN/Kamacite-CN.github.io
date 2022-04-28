@@ -11,16 +11,12 @@
 </head>
 
 <body>
-	<div class="jumbotron jumbotron-fluid text-center" style="margin-bottom: 0;">
-		<h1 class="display-1">Kamacite.</h1>
-		<h3>Devoted to code.</h3>
-	</div>
-	<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+	<nav class="navbar navbar-expand-md navbar-light p-5">
 		<div class="container-fluid">
 		<button class="navbar-toggler btn btn-primary" type="button" data-toggle="collapse" data-target="#nav-content">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a class="navbar-brand" href="#">Kamacite China</a>
+		<a class="navbar-brand" href="#"><b>Kamacite</b> China</a>
 		<div class="collapse navbar-collapse" id="nav-content">
 			<ul class="nav navbar-nav">
 				<li class="active"><a class="nav-link" href="#">首页</a></li>
@@ -34,29 +30,37 @@
 		</div>
 	</nav>
 
-	<div class="container">
-		<div class="row">
-			<a id="projects"></a>
-			<div class="col-sm-12 col-lg-8 my-5">
-				<h1>项目
-					<small>已发布或正在开发的产品</small>
-				</h1>
-				<div class="card card-body my-2">
-					<h2>KamaciteOS <span class="badge badge-light">开发中</span></h2>
+	<div class="container-fluid bg-light py-5">
+		<a id="projects"></a>
+		<div class="container-fluid text-center my-5">
+			<h1>项目</h1>
+			<h5>正在开发和已完成的项目</h5>
+		</div>
+		<div class="row justify-content-center my-5 px-5">
+			<div class="card col-md-4 p-0 m-3">
+				<div class="card-body">
+					<h2>KamaciteOS
+						<small><span class="badge badge-light">开发中</span></small>
+					</h2>
 					<p>基于 Linux 的轻量级操作系统，安全、透明，对所有用户友好。</p>
-					<a class="btn btn-info disabled">获取 KamaciteOS
-						<span class="badge badge-danger">不可用</span>
-					</a>
-				</div>
-				<div class="card card-body my-2">
+				</div>				
+				<a class="btn btn-info disabled text-light card-footer">获取 KamaciteOS
+					<span class="badge badge-danger">开发中</span>
+				</a>
+			</div>
+			<div class="card col-md-4 p-0 m-3">
+				<div class="card-body">
 					<h2>Kamacite Security</h2>
 					<p>简洁小巧恶意程序查杀软件，即开即用。</p>
-					<a class="btn btn-info disabled">获取 Kamacite Security
-						<span class="badge badge-warning">待上传</span>
-					</a>
 				</div>
+				<a class="btn btn-info disabled text-light card-footer">获取 Kamacite Security
+					<span class="badge badge-warning">待上传</span>
+				</a>
 			</div>
-
+		</div>
+	</div>
+		
+		<div>
 			<div class="col-sm-12 col-lg-4 my-5">
 				<a id="about"></a>
 				<div class="card card-body">
@@ -65,7 +69,7 @@
 				</div>
 			</div>
 		</div>
-
+	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 col-lg-8 my-5">
 				<a id="contacts"></a>
