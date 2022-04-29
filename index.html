@@ -8,36 +8,47 @@
 	<title>Kamacite China</title>
 
 	<link rel="stylesheet" href="assets/custom.css">
+	<style>* { scroll-behavior: smooth; }</style>
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-md navbar-light p-5">
+	<img src="assets/mainbg.jpg" alt="Background Image" class="container-fluid p-0 img-responsive"
+		style="position: fixed; z-index: -1; height: 100vh;">
+
+	<nav class="navbar navbar-expand-md navbar-dark p-5">
 		<div class="container-fluid">
-		<button class="navbar-toggler btn btn-primary" type="button" data-toggle="collapse" data-target="#nav-content">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<a class="navbar-brand" href="#"><b>Kamacite</b> China</a>
+			<button class="navbar-toggler btn" type="button" data-toggle="collapse" data-target="#nav-content">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="#"><b>Kamacite China</b></a>
 		<div class="collapse navbar-collapse" id="nav-content">
 			<ul class="nav navbar-nav">
-				<li class="active"><a class="nav-link" href="#">首页</a></li>
-				<li><a class="nav-link" href="#projects">项目</a></li>
-				<li><a class="nav-link" href="#about">关于 Kamacite</a></li>
-				<li><a class="nav-link" href="#contacts">联系我们</a></li>
-				<li><a class="nav-link" href="#sponsor">赞助</a></li>
-				<li><a class="nav-link" href="#links">友情链接</a></li>
+				<li class="nav-item active"><a class="nav-link" href="#">首页</a></li>
+				<li class="nav-item"><a class="nav-link" href="#projects">项目</a></li>
+				<li class="nav-item"><a class="nav-link" href="#about">关于 Kamacite</a></li>
+				<li class="nav-item"><a class="nav-link" href="#contacts">联系我们</a></li>
+				<li class="nav-item"><a class="nav-link" href="#sponsor">赞助</a></li>
+				<li class="nav-item"><a class="nav-link" href="#links">友情链接</a></li>
 			</ul>
 		</div>
 		</div>
 	</nav>
 
-	<div class="container-fluid bg-light py-5">
-		<a id="projects"></a>
+	<div class="jambotron-fluid text-center text-light py-5 my-5" style="box-sizing: border-box; height: calc(100vh - 14.5rem);">
+		<div class="display-2">Kamacite</div>
+		<p class="my-5">/ <b>Devoted to code.</b> /</p>
+		<a href="#main" class="btn btn-light btn-lg m-5 px-5">了解更多</a>
+	</div>
+
+	<a id="main"></a>
+	<a id="projects"></a>
+	<div class="container-fluid bg-white py-5">
 		<div class="container-fluid text-center my-5">
 			<h1>项目</h1>
 			<h5>正在开发和已完成的项目</h5>
 		</div>
-		<div class="row justify-content-center my-5 px-5">
-			<div class="card col-md-4 p-0 m-3">
+		<div class="row justify-content-center my-0 p-5">
+			<div class="card col-md-3 p-0 m-3">
 				<div class="card-body">
 					<h2>KamaciteOS
 						<small><span class="badge badge-light">开发中</span></small>
@@ -48,7 +59,7 @@
 					<span class="badge badge-danger">开发中</span>
 				</a>
 			</div>
-			<div class="card col-md-4 p-0 m-3">
+			<div class="card col-md-3 p-0 m-3">
 				<div class="card-body">
 					<h2>Kamacite Security</h2>
 					<p>简洁小巧恶意程序查杀软件，即开即用。</p>
@@ -60,48 +71,51 @@
 		</div>
 	</div>
 		
-		<div>
-			<div class="col-sm-12 col-lg-4 my-5">
-				<a id="about"></a>
-				<div class="card card-body">
-					<h1 class="card-title">关于 Kamacite</h1>
-					<p class="card-text">我们是两个上海中学生。</p>
+	<a id="about"></a>
+	<div class="container-fluid bg-light py-5 text-center">
+		<h1 class="my-5">关于 Kamacite</h1>
+		<p class="my-5">我们是两个上海中学生。</p>
+	</div>
+
+	
+	<a id="contacts"></a>
+	<div class="container-fluid bg-white py-5 text-center">
+		<div class="row justify-content-center">
+			<div class="col-md-3 my-5">
+				<h1 class="my-5">联系我们</h1>
+				<div class="btn-group btn-group-lg">
+					<a href="https://github.com/Kamacite-CN" class="btn btn-outline-primary">
+						<img src="https://img.icons8.com/fluency/48/000000/github.png" alt="GitHub @Kamacite-CN"/>
+					</a>
+					<a href="mailto:swang_0711@kamacite.cn" class="btn btn-outline-primary">
+						<img src="https://img.icons8.com/fluency/48/000000/email-open.png" alt="swang_0711@kamacite.cn"/>
+					</a>
 				</div>
 			</div>
-		</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 col-lg-8 my-5">
-				<a id="contacts"></a>
-				<div class="mb-5">
-					<h1>联系我们</h1>
-					<div class="list-group">
-						<a href="https://github.com/Kamacite-CN" class="list-group-item">GitHub @Kamacite-CN</a>
-						<a href="mailto:swang_0711@kamacite.cn" class="list-group-item">swang_0711@kamacite.cn</a>
-					</div>
-				</div>
-				<a id="sponsor"></a>
-				<div class="mt-5">
-					<h2>赞助</h2>
-					<small>不会真的有人给我们赞助吧</small>
-				</div>
-			</div>
-			<a id="links"></a>
-			<div class="col-sm-12 col-lg-4 my-5">
-				<h2>友情链接</h2>
-				<div class="list-group">
-					<a class="list-group-item" href="https://qizhen-yang.cn">Qizhen Yang</a>
-					<a class="list-group-item" href="https://newtab.qizhen-yang.cn">NewTAB 2.0</a>
-					<a class="list-group-item" href="http://wflms.cn">WFLA</a>
-				</div>
+			<a id="sponsor"></a>
+			<div class="col-md-3 my-5">
+				<h1 class="my-5">赞助</h1>
+				<small>不会真的有人给我们赞助吧</small>
 			</div>
 		</div>
 	</div>
-
-	<div class="jumbotron jumbotron-fluid text-center" style="margin-bottom: 0;">
-		<small>Made with &hearts; by <a href="#">Kamacite Group</a>.
-			&copy; 2019~2022 Kamacite China.
-		</small>
+	<a id="links"></a>
+	<div class="jumbotron-fluid p-5 text-light">
+		<div class="row justify-content-center">
+			<div class="col-md-5 my-3">
+				<p>Made with &hearts; by Kamacite Group.</p>
+				<p><b>&copy; 2019~2022 Kamacite China.</b></p>
+			</div>
+			<a id="links"></a>
+			<div class="col-md-2 my-3">
+				<h4 class="text-light">友情链接</h4>
+				<div class="nav flex-column">
+					<a class="nav-item nav-link px-0" href="https://qizhen-yang.cn">Qizhen Yang</a>
+					<a class="nav-item nav-link px-0" href="https://newtab.qizhen-yang.cn">NewTAB 2.0</a>
+					<a class="nav-item nav-link px-0" href="http://wflms.cn">WFLA</a>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
